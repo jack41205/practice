@@ -88,7 +88,10 @@ function myFunction() {
     $(document).on('click', '[data-toggle="card"]', function (event) {   
    
       $('#imagepreview').attr('src', $(this).find('img').attr('src'));
+      $("input[class=header]");
+
       $('.modal').css('display', 'block');
+
     });
   
     $('.close').click(function() {
