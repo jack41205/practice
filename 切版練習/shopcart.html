@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>購物車</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- 01 nav start -->
+    <div class="container fixed-top" id="navDiv">
+        <div class="row">
+            <div id="sid">
+                <a href="index.html"><img class="w-100 " src="img/01.png"alt=""></a>
+                <div id="menu">
+                    <ul>
+                        <a href="index.html"><li class="sidebar" id="home" >首頁</li></a>
+                        <a href="menu.html"><li class="sidebar">菜單</li></a>
+                    
+                        <a href="person.html">   <li class="sidebar">加入會員</li></a> 
+                    
+                        <a href="shopcart.html">  <li class="active  sidebar">外送訂餐</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 01 sidebar end -->
+    <H1 class="text-center text-white">訂餐
+
+        <div style="float:right; cursor: pointer;padding-right: 35px;">
+            <span class="bi bi-cart2 my-cart-icon " data-bs-toggle="modal" data-bs-target="#cart">
+                <span style="position:absolute; top: 25px; right: 55px; font-size:medium; "
+                    class=" translate-middle badge rounded-pill bg-danger total-count ">
+                    <span class="visually-hidden">unread messages</span>
+
+                </span>
+            </span>
+        </div>
+    </H1>
+
+
+
+
+    <div class="input-group d-flex justify-content-center">
+        <div>
+            <input class="form-control" type="text" onkeyup="myFunction()" id="myinput" size="20">
+        </div>
+        <span class="icon-input-btn">
+            <button type="submit" class="btn btn-primary" style="z-index: -1;"><span class="bi-search">
+
+            </button>'
+        </span>
+        
+    </div>
+    </div>
+
+
+
+
+
+    <br><br>
+    <div class="container">
+        <div class="menu-card">
+
+
+
+            <div class="card">
+                <img src="img/爭鮮/北海道厚鮮干貝.png" alt="">
+                <div class="header">北海道厚鮮干貝</div>
+                <div class="body">Whole Hokkaido Scallop
+                    60元
+                    
+
+                    <button class="btn btn-primary add-to-cart"  data-name="北海道厚鮮干貝"
+                        data-price="60">加入購物車</button>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/特上厚切鰻魚.png" alt="">
+                <div class="header">特上厚切鰻魚</div>
+                <div class="body">Top Grade Thick Cut Eel
+                    60元
+
+                    <button class="btn btn-primary add-to-cart"  data-name="特上厚切鰻魚"
+                    data-price="60">加入購物車</button>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/炙燒香柚山葵牡蠣.png" alt="">
+                <div class="header">炙燒香柚山葵牡蠣</div>
+                <div class="body">Seared Oyster w Yuzu Wasabi 60元
+
+
+                    <button class="btn btn-primary add-to-cart"  data-name="炙燒香柚山葵牡蠣"
+                    data-price="60">加入購物車</button>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/焰香乳酪星鰻.png" alt="">
+                <div class="header">焰香乳酪星鰻</div>
+                <div class="body">Grilled Cheese Conger Eel
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="焰香乳酪星鰻"
+                    data-price="40">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/醬香洋蔥煙燻鮭.png" alt="">
+                <div class="header">醬香洋蔥煙燻鮭</div>
+                <div class="body">Smoked Salmon w／ Onion
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="醬香洋蔥煙燻鮭"
+                    data-price="40">加入購物車</button>
+
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/牛舌.png" alt="">
+                <div class="header">牛舌</div>
+                <div class="body">Beef Tongue
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="牛舌"
+                    data-price="40">加入購物車</button>
+
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/燒炙起士酪梨蝦.png" alt="">
+                <div class="header">燒炙起士酪梨蝦</div>
+                <div class="body">Grilled Cheese Avocado Shrimp 40元</div>
+
+                <button class="btn btn-primary add-to-cart"  data-name="燒炙起士酪梨蝦"
+                    data-price="40">加入購物車</button>
+
+
+            </div>
+
+            <div class="card">
+                <img src="img/爭鮮/蟹膏赤蝦.png" alt="">
+                <div class="header">蟹膏赤蝦</div>
+                <div class="body">Velvet Shrimp w／ Crab Roe
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="蟹膏赤蝦"
+                    data-price="40">加入購物車</button>
+
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/鮭魚肚.png" alt="">
+                <div class="header">鮭魚肚</div>
+                <div class="body">Salmon Belly
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="鮭魚肚"
+                    data-price="40">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/鮭魚.png" alt="">
+                <div class="header">鮭魚</div>
+                <div class="body">Salmon
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="鮭魚"
+                    data-price="40">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/莎莎甜蝦鮭魚.png" alt="">
+                <div class="header">莎莎甜蝦鮭魚</div>
+                <div class="body">Salmon Sweet Shrimp Salsa
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="莎莎甜蝦鮭魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/干貝.png" alt="">
+                <div class="header">干貝</div>
+                <div class="body">Scallop
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="干貝"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/焦糖鮭魚.png" alt="">
+                <div class="header">焦糖鮭魚</div>
+                <div class="body">Sugar Glazed Salmon
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="焦糖鮭魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+
+            <div class="card">
+                <img src="img/爭鮮/北魷.png" alt="">
+                <div class="header">北魷</div>
+                <div class="body">Pacific Flying Squid
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="北魷"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/鮪魚.png" alt="">
+                <div class="header">鮪魚</div>
+                <div class="body">Tuna
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="鮪魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/烤鮭魚肚.png" alt="">
+                <div class="header">烤鮭魚肚</div>
+                <div class="body">Grilled Salmon Belly
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="烤鮭魚肚"
+                    data-price="30">加入購物車</button>
+
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/鮮蝦.png" alt="">
+                <div class="header">鮮蝦</div>
+                <div class="body">Shrimp
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="鮮蝦"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/章魚.png" alt="">
+                <div class="header">章魚</div>
+                <div class="body">Cooked Octopus
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="章魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/蒜香醬旗魚.png" alt="">
+                <div class="header">蒜香醬旗魚</div>
+                <div class="body">Garlic Swordfish
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="蒜香醬旗魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/明太子鯛魚.png" alt="">
+                <div class="header">明太子鯛魚</div>
+                <div class="body">Tilapia w／ Pollock Roe
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="明太子鯛魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/起士代鮑.png" alt="">
+                <div class="header">起士代鮑</div>
+                <div class="body">Mock Abalone w／Cheese
+                    30元</div>
+                    <button class="btn btn-primary add-to-cart"  data-name="起士代鮑"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/黃金鲱魚.png" alt="">
+                <div class="header">黃金鲱魚</div>
+                <div class="body">Herring with Capelin Roe
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="黃金鲱魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/醋烤鯖魚.png" alt="">
+                <div class="header">醋烤鯖魚</div>
+                <div class="body">Grilled Pickled Mackerel
+                    30元</div>
+
+                  
+                    <button class="btn btn-primary add-to-cart"  data-name="醋烤鯖魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/牛五花.png" alt="">
+                <div class="header">牛五花</div>
+                <div class="body">Beef Plate Slices
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="牛五花"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/北寄貝.png" alt="">
+                <div class="header">北寄貝</div>
+                <div class="body">Arctic Surf Clam
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="北寄貝"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/玉子燒.png" alt="">
+                <div class="header">玉子燒</div>
+                <div class="body">Tamagoyaki
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="玉子燒"
+                    data-price="30">加入購物車</button>
+
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/蒲燒星鰻.png" alt="">
+                <div class="header">蒲燒星鰻</div>
+                <div class="body">Kabayaki Conger Eel
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="蒲燒星鰻"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/蒲燒鯛魚.png" alt="">
+                <div class="header">蒲燒鯛魚</div>
+                <div class="body">Kabayaki Tilapia
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="蒲燒鯛魚"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/蟹風味棒.png" alt="">
+                <div class="header">蟹風味棒</div>
+                <div class="body">Imitation Crab Meat
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="蟹風味棒"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/柚子山葵蟹肉盛.png" alt="">
+                <div class="header">柚子山葵蟹肉盛</div>
+                <div class="body">Yuzu Wasabi Crab Sushi Wrap 40元</div>
+
+                <button class="btn btn-primary add-to-cart"  data-name="柚子山葵蟹肉盛"
+                data-price="40">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/焗烤扇貝盛.png" alt="">
+                <div class="header">焗烤扇貝盛</div>
+                <div class="body">Baked Scallop Sushi Wrap
+                    40元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="焗烤扇貝盛"
+                    data-price="40">加入購物車</button>
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/泡菜牛肉盛.png" alt="">
+                <div class="header">泡菜牛肉盛</div>
+                <div class="body">Kimchi Beef Sushi Wrap
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="泡菜牛肉盛"
+                    data-price="30">加入購物車</button>
+
+            </div>
+            <div class="card">
+                <img src="img/爭鮮/香煎海灣貝.png" alt="">
+                <div class="header">香煎海灣貝</div>
+                <div class="body">Pan Fried Bay Scallop
+                    30元</div>
+
+                    <button class="btn btn-primary add-to-cart"  data-name="香煎海灣貝"
+                    data-price="30">加入購物車</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div  class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document"  >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">購物車</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>總價格: TWD &nbsp<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">購物車清空</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">關閉</button>
+                    <button type="button" class="btn btn-primary">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <h6 class="text-center text-white"> <a href="https://www.sushiexpress.com.tw/sushi-express/Menu">資料來源 爭鮮網站</a>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/shop.js"></script>
+
+
+</body>
+
+</html>
